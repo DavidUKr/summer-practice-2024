@@ -1,61 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+import './styles.css';
 import Header from './components/Header';
 import MovieCard from './components/MovieCard';
 import ReviewCard from './components/ReviewCard';
 import Footer from './components/Footer';
-import './styles.css';  // Import the combined CSS file
 
 const App = () => {
-  const [movies, setMovies] = useState([]);
-  const [reviews, setReviews] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const recommendedMovies = [
+    { title: 'Inception', rating: 6.8 },
+    { title: 'The Matrix', rating: 8.9 },
+    // Add more movies as needed
+  ];
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const movieResponse = await axios.get('/api/movies');
-        const reviewResponse = await axios.get('/api/reviews');
-        setMovies(movieResponse.data);
-        setReviews(reviewResponse.data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching data", error);
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  const latestReviews = [
+    {
+      reviewer: 'DannMoore73',
+      text: 'This was not so good. I still gave it a solid 6/10 because I loved the cast',
+      rating: 6,
+    },
+    // Add more reviews as needed
+  ];
 
   return (
     <div className="App">
       <Header />
-      <div className="section">
+      <section className="section">
         <h2 className="section-title">Top Recommended Movies</h2>
         <div className="movie-grid">
-          {movies.map((movie) => (
-            <MovieCard key={movie.id} title={movie.title} rating={movie.rating} />
+          {recommendedMovies.map((movie, index) => (
+            <MovieCard key={index} title={movie.title} rating={movie.rating} />
           ))}
         </div>
-      </div>
-      <div className="section">
+      </section>
+      <section className="section">
         <h2 className="section-title">Latest Reviews</h2>
         <div className="review-list">
-          {reviews.map((review) => (
-            <ReviewCard
-              key={review.id}
-              reviewer={review.reviewer}
-              text={review.text}
-              rating={review.rating}
-            />
+          {latestReviews.map((review, index) => (
+            <ReviewCard key={index} reviewer={review.reviewer} text={review.text} rating={review.rating} />
           ))}
         </div>
-      </div>
+      </section>
       <Footer />
     </div>
   );
