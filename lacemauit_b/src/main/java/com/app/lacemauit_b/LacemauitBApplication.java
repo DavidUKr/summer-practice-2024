@@ -1,13 +1,13 @@
-package com.lacemauit_back;
+package com.app.lacemauit_b;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LacemauitBackApplication {
+public class LacemauitBApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LacemauitBackApplication.class, args);
+		SpringApplication.run(LacemauitBApplication.class, args);
 	}
 
 }

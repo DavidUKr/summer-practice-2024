@@ -1,10 +1,10 @@
-package com.lacemauit_back;
+package com.app.lacemauit_b;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LacemauitBackApplicationTests {
+class LacemauitBApplicationTests {
 
 	@Test
 	void contextLoads() {

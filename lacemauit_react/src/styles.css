@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dbe8d7; /* Light Mint */
+    color: #646a45; /* Dark Olive Green */
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .section {
+    width: 80%;
+    margin: 2rem 0;
+  }
+  
+  .section-title {
+    color: #646a45; /* Dark Olive Green */
+    margin-bottom: 1rem;
+  }
+  
+  .movie-grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .review-list {
+    width: 100%;
+  }
+  

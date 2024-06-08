@@ -1,0 +1,10 @@
+.footer {
+    width: 100%;
+    background-color: #de5432; /* Deep Coral */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+  }
+  

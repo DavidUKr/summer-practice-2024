@@ -1,0 +1,24 @@
+.header {
+    width: 100%;
+    background-color: #594538; /* Dark Brown */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-name {
+    margin-left: 0.5rem;
+  }
+  

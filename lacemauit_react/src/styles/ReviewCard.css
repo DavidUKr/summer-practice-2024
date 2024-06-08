@@ -1,0 +1,44 @@
+.review-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .review-thumbnail {
+    background-color: #3ca299; /* Teal */
+    height: 80px;
+    width: 80px;
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  
+  .review-content {
+    flex: 1;
+  }
+  
+  .review-text {
+    color: #de5432; /* Deep Coral */
+    margin: 0.5rem 0;
+  }
+  
+  .reviewer-name {
+    color: #ce6938; /* Burnt Orange */
+    font-weight: bold;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .star {
+    color: #ce6938; /* Burnt Orange */
+    margin-right: 0.5rem;
+  }
+  

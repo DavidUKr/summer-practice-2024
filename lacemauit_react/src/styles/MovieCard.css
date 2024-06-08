@@ -1,0 +1,29 @@
+.movie-card {
+    width: 30%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .thumbnail {
+    background-color: #3ca299; /* Teal */
+    height: 150px;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .star {
+    color: #ce6938; /* Burnt Orange */
+    margin-right: 0.5rem;
+  }
+  
